@@ -1,0 +1,17 @@
+{
+  "name" : "bots_samples",
+  "version" : "17.4.3",
+  "description" : "Bot samples",
+  "main" : "mcebots.js",
+  "repository": {},
+  "license": "ISC",
+  "dependencies": {
+    "joi": "^9.2.0"
+  },
+  "oracleMobile" : {
+    "dependencies" : {
+      "apis" : { },
+      "connectors" : { }
+    }
+  }
+}
