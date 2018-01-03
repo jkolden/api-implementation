@@ -16,6 +16,8 @@ folder
       --> {purpose}
 
 4. Note that as we develop there will be some files in the starter custom code that we will also need to access. From the Starter Custom Code, copy the following files and place them into the newly created js folder:
-a. registry.js
-b. sdk.js
-c. shell.js
+- registry.js
+- sdk.js
+- shell.js
+
+5. From the Starter Custom Code copy the say_hello.js file into the lowest folder under js and rename it accordingly.
