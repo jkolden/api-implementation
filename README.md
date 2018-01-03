@@ -21,3 +21,14 @@ folder
 - shell.js
 
 5. From the Starter Custom Code copy the say_hello.js file into the lowest folder under js and rename it accordingly.
+
+6. Add both folders - the code for the project you are going to build *and* the starter code application - to your Atom project directory.
+
+7. Copy the dependencies from the package.json file of the starter application to the package.json file of the project you are building:
+~~~~
+"dependencies": {
+  "joi": "^9.2.0"
+},
+~~~~
+
+8. Open the .js file of our custom component. This is where the custom component introduces itself to the bot and this is where we add our custom code for this component.
