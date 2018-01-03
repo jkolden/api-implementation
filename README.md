@@ -27,8 +27,37 @@ folder
 7. Copy the dependencies from the package.json file of the starter application to the package.json file of the project you are building:
 ~~~~
 "dependencies": {
-  "joi": "^9.2.0"
+  "joi": "^9.2.0",
+  "log4js": "^1.1.1"
 },
 ~~~~
 
 8. Open the .js file of our custom component. This is where the custom component introduces itself to the bot and this is where we add our custom code for this component.
+
+9. Edit the registry.js file. This is how the bot knows which components to add.
+
+example:
+~~~~
+module.exports = {
+    components: {
+        'video.sample': require('./components/sample/sample')
+  }
+};
+~~~~
+
+10. Delete the code from the css.js file of our new project but first make not of the GET url. Then copy the code from the starter application mcebots.js into the ccs.js file of our new project. Copy everything including this line but replace the GET url with the url that we noted from above:
+~~~~
+const apiURL = '/mobile/custom/bots_samples/components';
+~~~~
+
+11. Update the shell variable to match the folder directory of our project because our shell.js file sits in the js folder:
+~~~~
+var shell = require('./js/shell')();
+~~~~
+
+12. Open a terminal window and import the dependencies:
+~~~~
+$ npm install
+~~~~
+
+13. zip the custom component folder
